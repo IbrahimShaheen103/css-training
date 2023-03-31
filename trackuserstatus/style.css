@@ -1,0 +1,28 @@
+.status {
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.status div {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.status .online-msg {
+  background: green;
+  display: block;
+}
+.status .offline-msg {
+  background: red;
+  display: none;
+}
+.status.offline .online-msg {
+  display: none;
+}
+.status.offline .offline-msg {
+  display: block;
+} /*# sourceMappingURL=index.min.css.map */

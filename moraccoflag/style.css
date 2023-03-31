@@ -1,0 +1,34 @@
+body {
+  background: #053a3d;
+  margin: 0;
+}
+.container {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#flag {
+  margin: 50px;
+  width: 500px;
+  height: 200px;
+}
+.flag_img {
+  position: relative;
+  background-image: url("flag.jpg");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  width: 1px;
+  height: 100%;
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+@keyframes wave {
+  0% {
+    top: 5%;
+  }
+  100% {
+    top: -5%;
+  }
+}

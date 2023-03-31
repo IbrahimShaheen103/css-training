@@ -1,0 +1,71 @@
+body {
+  font-family: Roboto;
+}
+.card {
+  height: 310px;
+  width: 500px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(20, 20, 20, 0.8));
+  border-radius: 20px;
+  color: white;
+  margin: 20px;
+  font-size: 16px;
+  box-shadow: 2px 2px 20px #707070;
+}
+.top-block {
+  display: inline-block;
+  width: 500px;
+  height: 155px;
+}
+.bottom-block {
+  display: inline-block;
+  width: 500px;
+  height: 155px;
+}
+.card-chip {
+  float: left;
+  margin: 20px;
+}
+.card-name {
+  float: right;
+  margin: 20px;
+  position: relative;
+  font-size: 28px;
+  font-weight: 550;
+}
+.card-number {
+  font-size: 28px;
+  margin: -30px 0 0 0;
+  text-align-last: center;
+  position: relative;
+  top: 30px;
+}
+.card-number span {
+  position: relative;
+  top: -18px;
+  left: 30px;
+}
+.balance {
+  float: left;
+  margin: 20px;
+  position: relative;
+  top: 38px;
+}
+.card-balance {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.card-icon {
+  float: right;
+  margin: 0 20px 0 0;
+  margin-top: 75px;
+}
+.circle-left {
+  margin-right: -15px;
+  opacity: 0.7;
+}
+.chip-img {
+  position: absolute;
+  top: -70%;
+  left: 5%;
+}

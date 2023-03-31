@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: calc(50vw - 100px);
+        top: calc(50vh - 100px);
+      }
+      .loader::before,
+      .loader::after {
+        content: "";
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+        animation: rotate 1s infinite cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      .loader::before {
+        background-color: deeppink;
+      }
+      .loader::after {
+        background-color: deepskyblue;
+        animation-delay: 0.5s;
+      }
+      @keyframes rotate {
+        0%,
+        100% {
+          left: 95%;
+        }
+        25% {
+          transform: scale(0.3);
+        }
+        50% {
+          left: 0;
+        }
+        75% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

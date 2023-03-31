@@ -1,0 +1,31 @@
+div {
+  --angle: 0deg;
+  width: 50vmin;
+  height: 50vmin;
+  border: 10px solid;
+  background: #000;
+  /* This will work but yield a wrong result: */
+  border-image: linear-gradient(
+      var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta
+    )
+    1;
+  animation: 10s rotate linear infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}

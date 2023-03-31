@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, #222, #111, #080808);
+}
+.content {
+  width: 80vmin;
+  height: 100vmin;
+  position: relative;
+  animation: spin 5s linear 0s infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.top-left {
+  left: 11vmin;
+  top: 2vmin;
+}
+.left-bot {
+  bottom: 11vmin;
+  left: 2vmin;
+  transform: rotate(-90deg);
+}
+.bot-right {
+  right: 11vmin;
+  bottom: 2vmin;
+  transform: rotate(-100deg);
+}
+.right-top {
+  right: 2vmin;
+  top: 11vmin;
+  transform: rotate(-270eg);
+}

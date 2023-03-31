@@ -1,0 +1,85 @@
+body {
+  background: #060016;
+  color: #fff;
+}
+.container {
+  width: 31.25em;
+  height: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+p.letter {
+  font-size: 3.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.letter-M {
+  left: 0.1em;
+}
+.letter-N {
+  right: 0.1em;
+}
+.moon {
+  background: #f5f5f5;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 0 0.6em rgba(225, 225, 225, 0.05),
+    0 0 0 1.2em rgba(225, 225, 225, 0.05), 0 0 0 1.8em rgba(225, 225, 225, 0.05);
+}
+.moon::after {
+  position: absolute;
+  content: "";
+  background-color: #c7c7c783;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 50%;
+  top: 3.75em;
+  left: 1.25em;
+  box-shadow: 0.9em -2.1em 0.2em #c7c7c7, 1.5em -0.3em 0 -0.6em #c7c7c7;
+}
+.moon::before {
+  position: absolute;
+  content: "";
+  background-color: #c7c7c783;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 50%;
+  top: 3.2em;
+  left: 3.25em;
+}
+
+.orbit {
+  height: 19.75em;
+  width: 19.75em;
+  border-radius: 50%;
+  position: absolute;
+  left: -5.2em;
+  bottom: -5.2em;
+  animation: spin 8s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.orbit p {
+  position: absolute;
+  font-size: 3.5em;
+  top: 0.25em;
+  left: 0.25em;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    font-size: 20px;
+  }
+}
